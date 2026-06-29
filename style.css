@@ -1,345 +1,378 @@
-/* ==========================
+/* ===========================================
    Franklin Enuma Portfolio
-========================== */
+=========================================== */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
 
-font-family:'Poppins',sans-serif;
+    font-family:'Poppins',sans-serif;
 
-background:#eef7ff;
+    background:#edf6ff;
 
-color:#333;
+    color:#333;
 
-line-height:1.7;
+    line-height:1.8;
 
 }
 
-/* Hero */
+/* ================= HEADER ================= */
 
-.hero{
+header{
 
-background:linear-gradient(135deg,#79c9ff,#1d87d7);
+    background:linear-gradient(135deg,#82cdf8,#4098d8);
 
-padding:80px 8%;
+    color:white;
 
-color:white;
+    padding:90px 20px;
+
+    text-align:center;
 
 }
 
 .container{
 
-max-width:1200px;
+    max-width:1100px;
 
-margin:auto;
-
-}
-
-.hero-container{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-gap:60px;
-
-flex-wrap:wrap;
+    margin:auto;
 
 }
 
-.hero-text{
+header h1{
 
-flex:1;
+    font-size:64px;
 
-min-width:320px;
+    font-weight:700;
 
-}
-
-.hero h1{
-
-font-size:60px;
-
-margin-bottom:15px;
-
-font-weight:700;
+    margin-bottom:20px;
 
 }
 
-.hero h2{
+.subtitle{
 
-font-size:34px;
+    font-size:26px;
 
-margin-bottom:10px;
+    margin-bottom:40px;
 
-font-weight:600;
-
-}
-
-.hero p{
-
-font-size:20px;
-
-margin-bottom:20px;
+    font-weight:300;
 
 }
 
-.intro{
+/* ================= BUTTONS ================= */
 
-max-width:620px;
+.buttons{
 
-opacity:.95;
+    display:flex;
 
-}
+    justify-content:center;
 
-/* Hero image */
+    gap:20px;
 
-.hero-image{
-
-flex:1;
-
-text-align:center;
-
-}
-
-.hero-image img{
-
-width:320px;
-
-height:320px;
-
-object-fit:cover;
-
-border-radius:50%;
-
-border:8px solid white;
-
-box-shadow:0 20px 50px rgba(0,0,0,.25);
-
-}
-
-/* Buttons */
-
-.hero-buttons{
-
-margin-top:30px;
-
-display:flex;
-
-gap:20px;
-
-flex-wrap:wrap;
+    flex-wrap:wrap;
 
 }
 
 .btn{
 
-background:white;
+    display:inline-block;
 
-padding:14px 28px;
+    padding:15px 34px;
 
-border-radius:10px;
+    background:white;
 
-text-decoration:none;
+    color:#0077cc;
 
-color:#1d87d7;
+    text-decoration:none;
 
-font-weight:600;
+    border-radius:10px;
 
-transition:.3s;
+    font-weight:600;
+
+    transition:.3s;
 
 }
 
 .btn:hover{
 
-transform:translateY(-4px);
+    transform:translateY(-4px);
 
-box-shadow:0 15px 30px rgba(0,0,0,.2);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
 
 }
 
 .secondary{
 
-background:transparent;
+    background:transparent;
 
-border:2px solid white;
+    color:white;
 
-color:white;
+    border:2px solid white;
 
 }
 
-/* Navigation */
+.secondary:hover{
+
+    background:white;
+
+    color:#0077cc;
+
+}
+
+/* ================= NAV ================= */
 
 nav{
 
-position:sticky;
+    background:white;
 
-top:0;
+    position:sticky;
 
-background:white;
+    top:0;
 
-display:flex;
+    z-index:999;
 
-justify-content:center;
+    text-align:center;
 
-gap:40px;
+    padding:18px;
 
-padding:18px;
-
-box-shadow:0 2px 12px rgba(0,0,0,.08);
-
-z-index:999;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
 
 }
 
 nav a{
 
-text-decoration:none;
+    text-decoration:none;
 
-color:#1d87d7;
+    color:#0077cc;
 
-font-weight:600;
+    margin:0 20px;
+
+    font-weight:600;
+
+    transition:.3s;
 
 }
 
 nav a:hover{
 
-color:#0b5da7;
+    color:#005fa3;
 
 }
 
-/* Sections */
+/* ================= SECTIONS ================= */
 
 section{
 
-max-width:1200px;
+    max-width:1100px;
 
-margin:60px auto;
+    margin:45px auto;
 
-padding:45px;
+    background:white;
 
-background:white;
+    padding:40px;
 
-border-radius:18px;
+    border-radius:14px;
 
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
 
 }
 
 section h2{
 
-font-size:34px;
+    color:#0077cc;
 
-color:#1d87d7;
+    font-size:38px;
 
-margin-bottom:25px;
+    margin-bottom:25px;
 
 }
 
-/* Cards */
+/* ================= GRID ================= */
 
-.cards{
+.grid{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 
-gap:25px;
-
-margin-top:30px;
+    gap:22px;
 
 }
 
 .card{
 
-background:#f7fbff;
+    background:#f7fbff;
 
-padding:25px;
+    border:1px solid #d9efff;
 
-border-radius:15px;
+    border-radius:12px;
 
-transition:.35s;
+    padding:25px;
 
-border:1px solid #d9efff;
+    transition:.35s;
 
 }
 
 .card:hover{
 
-transform:translateY(-8px);
+    transform:translateY(-8px);
 
-box-shadow:0 15px 35px rgba(0,0,0,.12);
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
 
 }
 
 .card h3{
 
-color:#1d87d7;
+    color:#0077cc;
 
-margin-bottom:15px;
+    margin-bottom:18px;
 
 }
 
-/* Footer */
+.card ul{
+
+    padding-left:18px;
+
+}
+
+/* ================= EXPERIENCE ================= */
+
+.job{
+
+    margin-bottom:35px;
+
+    padding-bottom:25px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.job:last-child{
+
+    border:none;
+
+}
+
+.job h3{
+
+    color:#0077cc;
+
+    margin-bottom:8px;
+
+}
+
+.job ul{
+
+    margin-top:15px;
+
+    padding-left:22px;
+
+}
+
+/* ================= LINKS ================= */
+
+a{
+
+    color:#0077cc;
+
+}
+
+a:hover{
+
+    color:#005fa3;
+
+}
+
+/* ================= FOOTER ================= */
 
 footer{
 
-margin-top:60px;
+    margin-top:60px;
 
-background:#1d87d7;
+    background:#0077cc;
 
-color:white;
+    color:white;
 
-padding:35px;
+    text-align:center;
 
-text-align:center;
-
-}
-
-/* Mobile */
-
-@media(max-width:900px){
-
-.hero-container{
-
-flex-direction:column-reverse;
-
-text-align:center;
+    padding:28px;
 
 }
 
-.hero h1{
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+header{
+
+padding:70px 20px;
+
+}
+
+header h1{
 
 font-size:42px;
 
 }
 
-.hero h2{
+.subtitle{
 
-font-size:28px;
+font-size:20px;
 
 }
 
-.hero-image img{
+.buttons{
 
-width:250px;
+flex-direction:column;
 
-height:250px;
+align-items:center;
+
+}
+
+.btn{
+
+width:230px;
+
+text-align:center;
 
 }
 
 nav{
 
+display:flex;
+
 flex-wrap:wrap;
 
-gap:15px;
+justify-content:center;
+
+gap:10px;
+
+}
+
+nav a{
+
+margin:5px;
+
+}
+
+section{
+
+margin:25px 15px;
+
+padding:25px;
+
+}
+
+section h2{
+
+font-size:30px;
 
 }
 
