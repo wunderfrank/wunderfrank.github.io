@@ -1,1 +1,346 @@
+```css
+/* =====================================================
+   Franklin Enuma Portfolio
+   Part 2A
+===================================================== */
+
+/* ---------- Google Font ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ---------- Root Variables ---------- */
+
+:root{
+
+--primary:#4da8e8;
+--primary-dark:#2d87c8;
+--primary-light:#87cefa;
+
+--background:#edf7ff;
+
+--white:#ffffff;
+
+--text:#2d3748;
+
+--muted:#718096;
+
+--radius:14px;
+
+--shadow:
+0 12px 28px rgba(0,0,0,.08);
+
+}
+
+/* ---------- Reset ---------- */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:var(--background);
+
+color:var(--text);
+
+line-height:1.8;
+
+}
+
+/* ---------- Links ---------- */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/* ---------- Hero ---------- */
+
+header{
+
+background:
+
+linear-gradient(
+135deg,
+#8fd5ff,
+#4ea3e2
+);
+
+height:360px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+/* ---------- Hero Content ---------- */
+
+.hero{
+
+width:100%;
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+.hero h1{
+
+font-size:4rem;
+
+font-weight:700;
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:1.5rem;
+
+font-weight:300;
+
+color:white;
+
+margin-bottom:35px;
+
+}
+
+/* ---------- Hero Buttons ---------- */
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:14px 34px;
+
+background:white;
+
+color:var(--primary-dark);
+
+font-weight:600;
+
+border-radius:10px;
+
+transition:.3s ease;
+
+box-shadow:var(--shadow);
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+.btn-outline{
+
+background:transparent;
+
+border:2px solid white;
+
+color:white;
+
+box-shadow:none;
+
+}
+
+.btn-outline:hover{
+
+background:white;
+
+color:var(--primary-dark);
+
+}
+
+/* ---------- Navigation ---------- */
+
+nav{
+
+background:white;
+
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+}
+
+nav ul{
+
+max-width:1100px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:40px;
+
+list-style:none;
+
+padding:18px;
+
+}
+
+nav a{
+
+font-weight:600;
+
+color:var(--primary-dark);
+
+transition:.25s;
+
+}
+
+nav a:hover{
+
+color:#0f5fa8;
+
+}
+
+/* ---------- Sections ---------- */
+
+section{
+
+max-width:1100px;
+
+margin:40px auto;
+
+padding:0 20px;
+
+}
+
+/* ---------- White Cards ---------- */
+
+.card{
+
+background:white;
+
+padding:40px;
+
+border-radius:16px;
+
+box-shadow:var(--shadow);
+
+}
+
+.card h2{
+
+font-size:2rem;
+
+color:var(--primary-dark);
+
+margin-bottom:20px;
+
+}
+
+.card p{
+
+margin-bottom:18px;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+header{
+
+height:auto;
+
+padding:70px 20px;
+
+}
+
+.hero h1{
+
+font-size:2.7rem;
+
+}
+
+.hero p{
+
+font-size:1.15rem;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.btn{
+
+width:230px;
+
+text-align:center;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+gap:18px;
+
+}
+
+.card{
+
+padding:28px;
+
+}
+
+}
+```
 
