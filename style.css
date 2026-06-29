@@ -1,154 +1,346 @@
+/* ==========================
+   Franklin Enuma Portfolio
+========================== */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#eaf6ff;
+
+font-family:'Poppins',sans-serif;
+
+background:#eef7ff;
+
 color:#333;
+
 line-height:1.7;
+
 }
 
-header{
-background:linear-gradient(135deg,#87CEEB,#4aa3df);
+/* Hero */
+
+.hero{
+
+background:linear-gradient(135deg,#79c9ff,#1d87d7);
+
+padding:80px 8%;
+
 color:white;
-padding:70px 20px;
-text-align:center;
+
 }
 
 .container{
-max-width:1100px;
+
+max-width:1200px;
+
 margin:auto;
+
 }
 
-header h1{
-font-size:48px;
+.hero-container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:60px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-text{
+
+flex:1;
+
+min-width:320px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+margin-bottom:15px;
+
+font-weight:700;
+
+}
+
+.hero h2{
+
+font-size:34px;
+
 margin-bottom:10px;
+
+font-weight:600;
+
 }
 
-header p{
-font-size:22px;
-margin-bottom:25px;
+.hero p{
+
+font-size:20px;
+
+margin-bottom:20px;
+
 }
 
-.buttons{
-margin-top:25px;
+.intro{
+
+max-width:620px;
+
+opacity:.95;
+
+}
+
+/* Hero image */
+
+.hero-image{
+
+flex:1;
+
+text-align:center;
+
+}
+
+.hero-image img{
+
+width:320px;
+
+height:320px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid white;
+
+box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+margin-top:30px;
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
 }
 
 .btn{
-display:inline-block;
-padding:12px 28px;
+
 background:white;
-color:#0077cc;
+
+padding:14px 28px;
+
+border-radius:10px;
+
 text-decoration:none;
-border-radius:8px;
-margin:8px;
-font-weight:bold;
+
+color:#1d87d7;
+
+font-weight:600;
+
 transition:.3s;
+
 }
 
 .btn:hover{
-background:#005fa3;
-color:white;
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 30px rgba(0,0,0,.2);
+
 }
 
 .secondary{
+
 background:transparent;
+
 border:2px solid white;
+
 color:white;
+
 }
 
-.secondary:hover{
-background:white;
-color:#0077cc;
-}
+/* Navigation */
 
 nav{
-background:white;
-padding:15px;
-text-align:center;
+
 position:sticky;
+
 top:0;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+
+background:white;
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+padding:18px;
+
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+
+z-index:999;
+
 }
 
 nav a{
+
 text-decoration:none;
-color:#0077cc;
-margin:0 20px;
-font-weight:bold;
+
+color:#1d87d7;
+
+font-weight:600;
+
 }
 
 nav a:hover{
-color:#004b80;
+
+color:#0b5da7;
+
 }
+
+/* Sections */
 
 section{
-max-width:1100px;
-margin:40px auto;
-padding:35px;
+
+max-width:1200px;
+
+margin:60px auto;
+
+padding:45px;
+
 background:white;
-border-radius:12px;
-box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
 }
 
-h2{
-color:#0077cc;
-margin-bottom:20px;
+section h2{
+
+font-size:34px;
+
+color:#1d87d7;
+
+margin-bottom:25px;
+
 }
 
-.grid{
+/* Cards */
+
+.cards{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:20px;
+
+gap:25px;
+
+margin-top:30px;
+
 }
 
 .card{
+
 background:#f7fbff;
+
 padding:25px;
-border-radius:10px;
-transition:.3s;
-border:1px solid #dceeff;
+
+border-radius:15px;
+
+transition:.35s;
+
+border:1px solid #d9efff;
+
 }
 
 .card:hover{
-transform:translateY(-6px);
-box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
 }
 
-.job{
-margin-bottom:35px;
-padding-bottom:20px;
-border-bottom:1px solid #ddd;
+.card h3{
+
+color:#1d87d7;
+
+margin-bottom:15px;
+
 }
 
-ul{
-padding-left:20px;
-}
+/* Footer */
 
 footer{
-background:#0077cc;
+
+margin-top:60px;
+
+background:#1d87d7;
+
 color:white;
+
+padding:35px;
+
 text-align:center;
-padding:25px;
-margin-top:50px;
+
 }
 
-@media(max-width:768px){
+/* Mobile */
 
-header h1{
-font-size:34px;
+@media(max-width:900px){
+
+.hero-container{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
 }
 
-header p{
-font-size:18px;
+.hero h1{
+
+font-size:42px;
+
 }
 
-nav a{
-display:block;
-margin:10px;
+.hero h2{
+
+font-size:28px;
+
+}
+
+.hero-image img{
+
+width:250px;
+
+height:250px;
+
+}
+
+nav{
+
+flex-wrap:wrap;
+
+gap:15px;
+
 }
 
 }
